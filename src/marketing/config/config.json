@@ -1,23 +1,23 @@
 {
-    "testData": true,
+    "testData": false,
     "deployMarketing": true,
     "deployDataMesh": true,
-    "turboMode": true,
+    "turboMode": false,
     "projectIdSource": "",
     "projectIdTarget": "",
     "targetBucket": "",
-    "location": "US",
+    "location": "us-central1",
     "languages": [
         "E",
         "S"
     ],
     "currencies": [
-        "USD"
+        "USD","ILS"
     ],
     "k9": {
         "datasets": {
-            "processing": "K9_PROCESSING",
-            "reporting": "K9_REPORTING"
+            "processing": "CORTEX_K9_PROCESSING",
+            "reporting": "CORTEX_K9_REPORTING"
         }
     },
     "DataMesh": {
