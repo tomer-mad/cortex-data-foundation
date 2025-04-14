@@ -20,13 +20,13 @@
         "deployDateDim": true,
         "deployHolidayCalendar": true,
         "deployCountryDim": true,
-        "deploySustainability": true,
-        "deployProductDim": true,
+        "deploySustainability": false,
+        "deployProductDim": false,
         "deployCurrencyConversion": false,
         "deployCrossMedia": false,
         "deployCATGAP": false,
         "deployWeather": false,
-        "deployTrends": true,
+        "deployTrends": false,
         "ProductDim": {
             "dataSourceType": "",
             "textLanguage": ""
