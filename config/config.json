@@ -92,7 +92,7 @@
         "deployMeta": true,
         "deploySFMC": false,
         "deployDV360": false,
-        "deployGA4": false,
+        "deployGA4": true,
         "dataflowRegion": "us-central1",
         "GoogleAds": {
             "deployCDC": true,
