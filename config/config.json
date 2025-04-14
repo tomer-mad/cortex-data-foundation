@@ -155,7 +155,7 @@
                 "cdc": [
                     {
                         "property_id": 469540156,
-                        "name": "NavehPharma"
+                        "name": "analytics_u_better_469540156"
                     }
                 ],
                 "reporting": "CORTEX_REPORTING_GA4_PROD"
