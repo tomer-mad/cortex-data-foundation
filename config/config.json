@@ -98,9 +98,9 @@
             "deployCDC": true,
             "lookbackDays": 360,
             "datasets": {
-                "cdc": "CORTEX_GOOGLEADS_CDC",
-                "raw": "CORTEX_GOOGLEADS_RAW",
-                "reporting": "CORTEX_REPORTING_GOOGLEADS"
+                "cdc": "CORTEX_GOOGLEADS_CDC_PROD",
+                "raw": "CORTEX_GOOGLEADS_RAW_PROD",
+                "reporting": "CORTEX_REPORTING_GOOGLEADS_PROD"
             }
         },
         "CM360": {
