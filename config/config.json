@@ -4,7 +4,7 @@
     "deploySFDC": false,
     "deployMarketing": true,
     "deployOracleEBS": false,
-    "deployDataMesh": true,
+    "deployDataMesh": false,
     "deploySAPMLModels": false,
     "turboMode": false,
     "projectIdSource": "madgrowth-data",
