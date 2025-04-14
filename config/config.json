@@ -23,7 +23,7 @@
         "deploySustainability": true,
         "deployProductDim": true,
         "deployCurrencyConversion": false,
-        "deployCrossMedia": true,
+        "deployCrossMedia": false,
         "deployCATGAP": false,
         "deployWeather": false,
         "deployTrends": true,
