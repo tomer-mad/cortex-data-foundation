@@ -1,7 +1,7 @@
 {
     "testData": false,
     "deploySAP": false,
-    "deploySFDC": true,
+    "deploySFDC": false,
     "deployMarketing": true,
     "deployOracleEBS": false,
     "deployDataMesh": true,
@@ -9,13 +9,13 @@
     "turboMode": false,
     "projectIdSource": "madgrowth-data",
     "projectIdTarget": "madgrowth-data",
-    "targetBucket": "",
+    "targetBucket": "cortex_cloud_build_mad",
     "location": "us-central1",
     "testDataProject": "kittycorn-public",
     "k9": {
         "datasets": {
-            "processing": "CORTEX_K9_PROCESSING",
-            "reporting": "CORTEX_K9_REPORTING"
+            "processing": "CORTEX_K9_PROCESSING_PROD",
+            "reporting": "CORTEX_K9_REPORTING_PROD"
         },
         "deployDateDim": true,
         "deployHolidayCalendar": true,
@@ -23,7 +23,7 @@
         "deploySustainability": true,
         "deployProductDim": false,
         "deployCurrencyConversion": false,
-        "deployCrossMedia": false,
+        "deployCrossMedia": true,
         "deployCATGAP": false,
         "deployWeather": false,
         "deployTrends": false,
@@ -38,14 +38,14 @@
         "CrossMedia": {
             "productHierarchyType": "",
             "maxProductHierarchyMatchLevel": 9,
-            "targetCurrencies": ["USD","ILS"],
+            "targetCurrencies": ["USD"],
             "additionalPrompt": "",
             "lookbackWindowDays": 7
         }
     },
     "VertexAI": {
         "region": "us-central1",
-        "processingDataset": "CORTEX_VERTEX_AI_PROCESSING"
+        "processingDataset": "CORTEX_VERTEX_AI_PROCESSING_PROD"
     },
     "DataMesh": {
         "deployDescriptions": true,
@@ -96,24 +96,24 @@
         "dataflowRegion": "us-central1",
         "GoogleAds": {
             "deployCDC": true,
-            "lookbackDays": 180,
+            "lookbackDays": 360,
             "datasets": {
-                "cdc": "",
-                "raw": "",
-                "reporting": "CORTEX_REPORTING_GoogleAds"
+                "cdc": "CORTEX_GOOGLEADS_CDC",
+                "raw": "CORTEX_GOOGLEADS_RAW",
+                "reporting": "CORTEX_REPORTING_GOOGLEADS"
             }
         },
         "CM360": {
             "deployCDC": true,
             "dataTransferBucket": "",
             "datasets": {
-                "cdc": "",
-                "raw": "",
-                "reporting": "REPORTING_CM360"
+                "cdc": "CORTEX_CM360_CDC_PROD",
+                "raw": "CORTEX_CM360_RAW_PROD",
+                "reporting": "CORTEX_REPORTING_CM360_PROD"
             }
         },
         "TikTok": {
-            "deployCDC": false,
+            "deployCDC": true,
             "datasets": {
                 "cdc": "",
                 "raw": "",
@@ -128,9 +128,9 @@
         "Meta": {
             "deployCDC": true,
             "datasets": {
-                "cdc": "",
-                "raw": "",
-                "reporting": "REPORTING_Meta"
+                "cdc": "CORTEX_META_CDC_PROD",
+                "raw": "CORTEX_META_RAW_PROD",
+                "reporting": "CORTEX_REPORTING_META_PROD"
             }
         },
         "SFMC": {
@@ -145,9 +145,9 @@
         "DV360": {
             "deployCDC": true,
             "datasets": {
-                "raw": "",
-                "cdc": "",
-                "reporting": "REPORTING_DV360"
+                "raw": "CORTEX_DV360_RAW_PROD",
+                "cdc": "CORTEX_DV360_RAW_PROD",
+                "reporting": "CORTEX_REPORTING_DV360_PROD"
             }
         },
         "GA4": {
@@ -158,7 +158,7 @@
                         "name": ""
                     }
                 ],
-                "reporting": "REPORTING_GA4"
+                "reporting": "CORTEX_REPORTING_GA4_PROD"
             }
         }
     },
