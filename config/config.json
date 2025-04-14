@@ -105,7 +105,7 @@
         },
         "CM360": {
             "deployCDC": true,
-            "dataTransferBucket": "",
+            "dataTransferBucket": "mad_cm360_datatransfer",
             "datasets": {
                 "cdc": "CORTEX_CM360_CDC_PROD",
                 "raw": "CORTEX_CM360_RAW_PROD",
