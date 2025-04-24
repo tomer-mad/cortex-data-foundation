@@ -2,7 +2,7 @@
     "testData": false,
     "deploySAP": false,
     "deploySFDC": false,
-    "deployMarketing": true,
+    "deployMarketing": false,
     "deployOracleEBS": false,
     "deployDataMesh": false,
     "deploySAPMLModels": false,
@@ -85,15 +85,15 @@
         }
     },
     "marketing": {
-        "deployGoogleAds": true,
-        "deployCM360": true,
+        "deployGoogleAds": false,
+        "deployCM360": false,
         "deployTikTok": false,
         "deployLiveRamp": false,
         "deployMeta": true,
         "deploySFMC": false,
         "deployDV360": false,
         "deployGA4": true,
-        "dataflowRegion": "us-central1",
+        "dataflowRegion": "us",
         "GoogleAds": {
             "deployCDC": true,
             "lookbackDays": 360,
@@ -156,6 +156,10 @@
                     {
                         "property_id": 469540156,
                         "name": "analytics_u_better_469540156"
+                    },
+                    {
+                        "property_id": 155569515,
+                        "name": "analytics_isracard_155569515"
                     }
                 ],
                 "reporting": "CORTEX_REPORTING_GA4_PROD"

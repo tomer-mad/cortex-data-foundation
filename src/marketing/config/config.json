@@ -1,11 +1,11 @@
 {
     "testData": false,
     "deployMarketing": true,
-    "deployDataMesh": true,
+    "deployDataMesh": false,
     "turboMode": false,
-    "projectIdSource": "",
-    "projectIdTarget": "",
-    "targetBucket": "",
+    "projectIdSource": "madgrowth-data",
+    "projectIdTarget": "madgrowth-data",
+    "targetBucket": "cortex_marketing_cloud_build_mad",
     "location": "us-central1",
     "languages": [
         "E",
@@ -27,13 +27,13 @@
         "deployACLs": false
     },
     "marketing": {
-        "deployGoogleAds": true,
-        "deployCM360": true,
-        "deployTikTok": true,
-        "deployLiveRamp": true,
-        "deployMeta": true,
-        "deploySFMC": true,
-        "deployDV360": true,
+        "deployGoogleAds": false,
+        "deployCM360": false,
+        "deployTikTok": false,
+        "deployLiveRamp": false,
+        "deployMeta": false,
+        "deploySFMC": false,
+        "deployDV360": false,
         "deployGA4": true,
         "dataflowRegion": "",
         "GoogleAds": {
@@ -93,10 +93,17 @@
         },
         "GA4": {
             "datasets": {
-                "cdc": [
-                    {"property_id": 0, "name": ""}
+                "cdc":  [
+                    {
+                        "property_id": 469540156,
+                        "name": "analytics_u_better_469540156"
+                    },
+                    {
+                        "property_id": 155569515,
+                        "name": "analytics_isracard_155569515"
+                    }
                 ],
-                "reporting": "REPORTING_GA4"
+                "reporting": "CORTEX_REPORTING_GA4_PROD"
             }
         }
     }
