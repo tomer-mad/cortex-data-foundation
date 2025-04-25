@@ -10,7 +10,7 @@
     "projectIdSource": "madgrowth-data",
     "projectIdTarget": "madgrowth-data",
     "targetBucket": "cortex_cloud_build_mad",
-    "location": "us-central1",
+    "location": "us",
     "testDataProject": "kittycorn-public",
     "k9": {
         "datasets": {
