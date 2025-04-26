@@ -109,12 +109,12 @@
     "marketing": {
         "deployGoogleAds": false,
         "deployCM360": false,
-        "deployTikTok": false,
+        "deployTikTok": true,
         "deployLiveRamp": false,
         "deployMeta": false,
         "deploySFMC": false,
         "deployDV360": false,
-        "deployGA4": true,
+        "deployGA4": false,
         "dataflowRegion": "us",
         "GoogleAds": {
             "deployCDC": true,
