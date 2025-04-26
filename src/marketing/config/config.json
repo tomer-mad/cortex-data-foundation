@@ -1,23 +1,23 @@
 {
-    "testData": false,
+    "testData": true,
     "deployMarketing": true,
-    "deployDataMesh": false,
-    "turboMode": false,
-    "projectIdSource": "madgrowth-data",
-    "projectIdTarget": "madgrowth-data",
-    "targetBucket": "cortex_marketing_cloud_build_mad",
-    "location": "us-central1",
+    "deployDataMesh": true,
+    "turboMode": true,
+    "projectIdSource": "",
+    "projectIdTarget": "",
+    "targetBucket": "",
+    "location": "US",
     "languages": [
         "E",
         "S"
     ],
     "currencies": [
-        "USD","ILS"
+        "USD"
     ],
     "k9": {
         "datasets": {
-            "processing": "CORTEX_K9_PROCESSING",
-            "reporting": "CORTEX_K9_REPORTING"
+            "processing": "K9_PROCESSING",
+            "reporting": "K9_REPORTING"
         }
     },
     "DataMesh": {
@@ -27,13 +27,13 @@
         "deployACLs": false
     },
     "marketing": {
-        "deployGoogleAds": false,
-        "deployCM360": false,
-        "deployTikTok": false,
-        "deployLiveRamp": false,
-        "deployMeta": false,
-        "deploySFMC": false,
-        "deployDV360": false,
+        "deployGoogleAds": true,
+        "deployCM360": true,
+        "deployTikTok": true,
+        "deployLiveRamp": true,
+        "deployMeta": true,
+        "deploySFMC": true,
+        "deployDV360": true,
         "deployGA4": true,
         "dataflowRegion": "",
         "GoogleAds": {
@@ -93,17 +93,10 @@
         },
         "GA4": {
             "datasets": {
-                "cdc":  [
-                    {
-                        "property_id": 469540156,
-                        "name": "analytics_u_better_469540156"
-                    },
-                    {
-                        "property_id": 155569515,
-                        "name": "analytics_isracard_155569515"
-                    }
+                "cdc": [
+                    {"property_id": 0, "name": ""}
                 ],
-                "reporting": "CORTEX_REPORTING_GA4_PROD"
+                "reporting": "REPORTING_GA4"
             }
         }
     }
