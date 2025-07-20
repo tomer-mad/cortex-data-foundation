@@ -109,11 +109,11 @@
     "marketing": {
         "deployGoogleAds": false,
         "deployCM360": false,
-        "deployTikTok": true,
+        "deployTikTok": false,
         "deployLiveRamp": false,
         "deployMeta": false,
         "deploySFMC": false,
-        "deployDV360": false,
+        "deployDV360": true,
         "deployGA4": false,
         "dataflowRegion": "us",
         "GoogleAds": {
@@ -168,7 +168,7 @@
             "deployCDC": true,
             "datasets": {
                 "raw": "CORTEX_DV360_RAW_PROD",
-                "cdc": "CORTEX_DV360_RAW_PROD",
+                "cdc": "CORTEX_DV360_CDC_PROD",
                 "reporting": "CORTEX_REPORTING_DV360_PROD"
             }
         },
